@@ -33,6 +33,8 @@ exports.handler = (event, context, callback) => {
     "labels": ["bug"],
   });
 
+  console.log(process.env);
+
   var options = {
     hostname: 'api.github.com',
     port: 443,
