@@ -39,7 +39,7 @@ exports.handler = (event, context, callback) => {
     method: 'POST',
     headers: {
       'Accept': 'application/vnd.github.v3+json',
-      'Authorization': 'token 3fc09822f4bd5bf9553f856878e6a3f673940e2b',
+      'Authorization': 'token [PUT TOKEN HERE]',
       'Content-Type': 'application/json',
       'Content-Length': Buffer.byteLength(postData),
       'User-Agent': 'koddsson',
