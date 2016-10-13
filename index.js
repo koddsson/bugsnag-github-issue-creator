@@ -1,4 +1,5 @@
-'use strict';
+require('dotenv').config();
+
 var http = require('https');
 var querystring = require('querystring');
 
@@ -39,7 +40,7 @@ exports.handler = (event, context, callback) => {
     method: 'POST',
     headers: {
       'Accept': 'application/vnd.github.v3+json',
-      'Authorization': 'token [PUT TOKEN HERE]',
+      'Authorization': `token ${process.env.GITHUB_TOKEN}`,
       'Content-Type': 'application/json',
       'Content-Length': Buffer.byteLength(postData),
       'User-Agent': 'koddsson',
