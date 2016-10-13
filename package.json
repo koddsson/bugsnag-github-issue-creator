@@ -1,0 +1,7 @@
+{
+  "name": "bugsnag-github-issue-creator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kristján Oddsson <koddsson@gmail.com>",
+  "license": "MIT"
+}
